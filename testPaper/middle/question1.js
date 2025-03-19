@@ -22,14 +22,16 @@
  * @return {string}
  */
 
-export const createUserActionString = ({ userName = "", action = "" }) => {
-  if (userName === "") {
-    return `名無しさんが${action}しました`;
-  } else if (action === "") {
-    return `${userName}さんは何もしませんでした`;
-  } else {
-    return `${userName}が${action}しました`;
+export const createUserActionString = (object) => {
+  const { userName = "名無しさん", action = "" } = object;
+
+  if (action === "") {
+    return `${userName}は何もしませんでした`;
+  } else if (userName === "") {
+    return `名無しさんは何もしませんでした`;
   }
+
+  return `${userName}さんが${action}しました`;
 };
 
 const data = { userName: "田中", action: "挨拶" };
