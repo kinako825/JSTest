@@ -21,5 +21,16 @@
  */
 
 export const priceCalculator = (price, isTakeOut) => {
-  //ここを記述
+  const taxRate = isTakeOut ? 0.08 : 0.1;
+
+  const taxAmount = price * taxRate;
+  const totalPrice = price + taxAmount;
+
+  return totalPrice;
 };
+
+const price = 1000;
+const isTakeOut = false;
+
+const total = priceCalculator(price, isTakeOut);
+console.log(`税込価格: ¥${total}`);
