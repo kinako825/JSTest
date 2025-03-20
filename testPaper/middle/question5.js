@@ -12,5 +12,19 @@
  */
 
 export const changeElementText = (elementId, text) => {
-  //ここに記述
+  let element = document.getElementById(elementId);
+
+  if (element) {
+    element.textContent = text;
+    return element;
+  } else {
+    element = document.createElement("div");
+    element.id = elementId;
+    element.textContent = text;
+    document.body.appendChild(element);
+    return element;
+  }
 };
+
+// const result = changeElementText("my-element", "Hello World");
+// console.log(result);
