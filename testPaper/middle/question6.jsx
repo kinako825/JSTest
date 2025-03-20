@@ -22,7 +22,7 @@ const TestComponent1 = ({ userName }) => {
   return (
     <>
       <li>
-        <span style={{ textDecoration: isCompleted ? "line-though" : "none" }}>
+        <span style={{ textDecoration: isCompleted ? "line-through" : "none" }}>
           {userName}
         </span>
         <button onClick={() => setIsCompleted(!isCompleted)}>
