@@ -26,5 +26,5 @@ export const changeElementText = (elementId, text) => {
   }
 };
 
-const result = changeElementText("my-element", "Hello World");
-console.log(result);
+// const result = changeElementText("my-element", "Hello World");
+// console.log(result);
