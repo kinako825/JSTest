@@ -27,6 +27,6 @@ export const sumAndAverage = (array) => {
 
 const number = [1, 2, 3, 4, 5];
 
-const result = sumAndAverage(number);
-console.log(`合計: ${result.sum}`);
-console.log(`平均: ${result.average}`);
+// const result = sumAndAverage(number);
+// console.log(`合計: ${result.sum}`);
+// console.log(`平均: ${result.average}`);

@@ -29,8 +29,8 @@ export const priceCalculator = (price, isTakeOut) => {
   return totalPrice;
 };
 
-const price = 1000.85;
-const isTakeOut = false;
+// const price = 1000.85;
+// const isTakeOut = false;
 
-const total = priceCalculator(price, isTakeOut);
-console.log(`税込価格: ¥${total}`);
+// const total = priceCalculator(price, isTakeOut);
+// console.log(`税込価格: ¥${total}`);

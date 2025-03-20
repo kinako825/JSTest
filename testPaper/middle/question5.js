@@ -12,15 +12,17 @@
  */
 
 export const changeElementText = (elementId, text) => {
-  const element = document.getElementById(elementId);
+  let element = document.getElementById(elementId);
+
   if (element) {
     element.textContent = text;
     return element;
   } else {
-    const div = document.createElement("div");
-    div.textContent = text;
-    document.body.appendChild(div);
-    return div;
+    element = document.createElement("div");
+    element.id = elementId;
+    element.textContent = text;
+    document.body.appendChild(element);
+    return element;
   }
 };
 
