@@ -23,22 +23,22 @@
  */
 
 export const createUserActionString = (object) => {
-  const { userName = "名無しさん", action = "" } = object;
+  const { userName = "名無し", action = "" } = object;
 
   if (action === "") {
-    return `${userName}は何もしませんでした`;
+    return `${userName}さんは何もしませんでした`;
   } else if (userName === "") {
-    return `名無しさんは何もしませんでした`;
+    return `名無しさんが${action}しました`;
   }
 
   return `${userName}さんが${action}しました`;
 };
 
-const data = { userName: "田中", action: "挨拶" };
-console.log(createUserActionString(data));
+// const data = { userName: "田中", action: "挨拶" };
+// console.log(createUserActionString(data));
 
-const noName = { userName: "", action: "勉強" };
-console.log(createUserActionString(noName));
+// const noName = { userName: "", action: "勉強" };
+// console.log(createUserActionString(noName));
 
-const noAction = { userName: "佐藤", action: "" };
-console.log(createUserActionString(noAction));
+// const noAction = { userName: "佐藤", action: "" };
+// console.log(createUserActionString(noAction));
