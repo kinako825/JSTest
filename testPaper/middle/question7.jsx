@@ -8,7 +8,7 @@
 // 3. もしuserNamesの要素の中に"自分"という文字列が渡ってきたら表示しないようにしましょう。
 // 4. keyにはindexをつけましょう。
 
-import TestComponent1 from "./middle/question6";
+import TestComponent1 from "./question6";
 
 /**
  * @param {{userNames:string[]}} props
