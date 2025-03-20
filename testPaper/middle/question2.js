@@ -24,12 +24,12 @@ export const priceCalculator = (price, isTakeOut) => {
   const taxRate = isTakeOut ? 0.08 : 0.1;
 
   const taxAmount = price * taxRate;
-  const totalPrice = price + taxAmount;
+  const totalPrice = Math.floor(price + taxAmount);
 
   return totalPrice;
 };
 
-const price = 1000;
+const price = 1000.85;
 const isTakeOut = false;
 
 const total = priceCalculator(price, isTakeOut);

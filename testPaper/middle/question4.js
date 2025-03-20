@@ -17,5 +17,15 @@
  *  @return {(string|number)[]}
  */
 export const toggleArrayElement = (array, ele) => {
-  //ここに記述
+  if (array.includes(ele)) {
+    return array.filter((item) => item !== ele);
+  } else {
+    const newArray = [...array, ele];
+    return newArray;
+  }
 };
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// console.log(toggleArrayElement(numbers, 3));
+// console.log(toggleArrayElement(numbers, 6));

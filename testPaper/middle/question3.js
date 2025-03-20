@@ -14,5 +14,19 @@
  *  @return {{sum:number,average:number}}
  */
 export const sumAndAverage = (array) => {
-  //ここに記述
+  let sum = 0;
+
+  for (const num of number) {
+    sum += num;
+  }
+
+  const average = sum / array.length;
+
+  return { sum, average };
 };
+
+const number = [1, 2, 3, 4, 5];
+
+const result = sumAndAverage(number);
+console.log(`合計: ${result.sum}`);
+console.log(`平均: ${result.average}`);
